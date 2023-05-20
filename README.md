@@ -828,3 +828,545 @@ creator.
 * Epic Link − An Issue creator can provide an epic link, if the issue belongs to any of those.
 
 * Sprint − The user can define in which sprint, this issue belongs to, when this issue should be addressed.
+
+# JIRA-Create a Subtask
+
+An issue can be completed by performing many tasks with different persons like Dev, QA, UAT, Business, 
+
+Support, etc. To track the progress in each department, sub-tasks are created in an issue and assigned to the 
+
+concern person. Once all the sub-tasks are resolved, the issue can be marked as completed.
+
+
+<!--style="font-size:30px"-->
+Points to Note for Creating a Subtask
+
+The following points are to be considered when creating a subtask.
+
+* All subtasks are an essential part of their parent issue.
+
+* All subtasks are visible on the main screen of the parent issue.
+
+* Subtasks always belong to the same project as their parent issue.
+
+* Subtask has all fields that are present in the standard issue.
+
+* Subtasks cannot have a subtask of their own.
+
+<!--style="font-size:30px"-->
+Steps to Follow for Creating a Subtask
+
+We should consider the following steps when creating a subtask.
+
+* step 1: GO to Side pain there Backlog Option will come click on that list of all backlog will display.
+
+* step 2: click on the link then pop-up window will come.
+
+* step 3: Window click on '...' then list of option will come in that click on create a subtask.
+
+![image](image/subtask.png)
+
+Enter the details in all the required fields and then click on Create. The following screenshot shows the 
+
+Create Subtask Form with the required and optional fields.
+
+![image](image/subtask2.png)
+
+Once a subtask is created, it will be available on the Main Issue page → Subtask section. The following 
+
+screenshot shows how to view a subtask in an issue.
+
+![image](image/subtask3.png)
+
+
+# JIRA-Create Issue Using CSV
+
+A User can create multiple issues at a time using Comma separated file known as CSV. The CSV files are text 
+
+files those represent tabulated data and separate different sections by commas.
+
+They have two-step process that requires importing the data from a CSV, while a third optional step is also 
+
+present, which are listed below.
+
+1. Prepare a CSV file.
+2. Import the CSV file into the system.
+3. Save the configuration for future use.
+
+
+<!--style="font-size:30px"-->
+1. Prepare the CSV File
+
+While creating a CSV file the following points must be considered.
+
+Each CSV file should have a heading row with a summary column. The first row is the heading row and represents 
+
+the fields of the create issue page. Example − Summary, Assignee, Reporter, Priority, Description, sprint, 
+
+“Test Suite”, Ashish, Ashish, 1, etc.
+
+* Use double quote marks (“) in the CSV file to capture data that appears in multip.le lines. For Example − 
+
+upon import, JIRA will treat the following CSV as a single record: Summary, Description, Status, "Login 
+
+issue", "This is on a new line", Open
+
+* While importing issues from a CSV file, the Project Name and Project Key are important columns in CSV. In 
+
+addition, the name of these fields should match exactly as they are present in JIRA.
+
+
+<!--style="font-size:30px"-->
+2. Import the CSV File
+
+To import the CSV file, we should follow the steps given below.
+
+Step 1 − Select Issues → Import Issues from CSV to open the Bulk Create Setup page.
+
+The following screenshot shows how to access the Import issues from the CSV functionality.
+
+![image](image/csv1.jpg)
+
+Step 2 − On the Setup page, select CSV Source File. Do not check the “Use an existing configuration file” 
+
+check box, if you do not have a configuration file or if you want to create a new configuration file.
+
+Configuration files specify a mapping between column names in the CSV file's header row and fields in the JIRA 
+
+application.
+
+The following screenshot shows the Bulk create setup page, where the user browses and uploads the CSV file.
+
+![image](image/csv2.jpg)
+
+Step 3 − If the user checks the checkbox of “Use an existing configuration file”, JIRA will ask to specify an 
+
+Existing Configuration File.
+
+The following screenshot shows how to use an existing configuration file.
+
+![image](image/csv3.jpg)
+
+Step 4 − If the user does not select this option, then at the end of the CSV file import wizard, JIRA will ask 
+
+to create a configuration file, which can be used for subsequent CSV imports.
+
+Click on the Next button → the Settings step of the CSV file import wizard will display. Complete the required 
+
+fields. If the CSV file uses a different separator character other than a comma, specify that character in the 
+
+CSV Delimiter field. If the separator is a 'Tab', this can be entered using the format '/t'.
+
+The following screenshot shows how to provide settings of csv file −
+
+![image](image/csv4.jpg)
+
+Step 5 − Click on the Next button to proceed to the Map field’s step of the CSV file import wizard. Here, the 
+
+user has to map the column headers of the CSV file to the fields in the selected JIRA project. After 
+
+selection, tick the check box for Map field value.
+
+A CSV field should map to the JIRA summary field. This ensures the issues created have a summary.
+
+The following screenshot shows how to map CSV fields with JIRA fields −
+
+![image](image/csv5.jpg)
+
+Step 6 − Click on the Next button, the Map values step of the CSV file import wizard will display. On this 
+
+step of the import wizard, the user can select which specific CSV field values to map to which specific JIRA 
+
+field value.
+
+* Fields whose Map Field Value check boxes were selected in the previous step will be presented on this page.
+
+* If the CSV field has a username (e.g. Reporter or Assignee) and does not select the Map Field Value check 
+
+box for this field in the previous step of the CSV file import wizard, then the importer will map imported 
+
+usernames from the CSV file to (lowercase) JIRA usernames.
+
+The following screenshot shows how to map values.
+
+![image](image/csv6.jpg)
+
+
+Step 7 − Click on the Validate button, it will validate the imported data and display if any errors or 
+
+warnings are required, otherwise it will display how many successful imports are possible with the file.
+
+The following screenshot shows the successful validation of CSV file.
+
+![image](image/csv7.jpg)
+
+Step 8 − Now, Click the Begin Import button. The importer will display updates like import is in progress, 
+
+then a success message when the import is completed.
+
+Following screenshot shows how many issues are created using CSV file −
+
+![image](image/csv8.jpg)
+
+Step 9 − Click on the Check Created issues, it will display the list of issues those are created using the 
+
+CSV.
+
+The following screenshot shows the list of newly created issues using the CSV file.
+
+![image](image/csv9.jpg)
+
+
+# JIRA-Edit an Issue
+
+To edit an issue in JIRA, the user has to navigate to the issue, which is required to edit and the click on 
+
+the issue to open the page. The next step is to click on the Edit button, which is present at the top left 
+
+hand side of the view issue page. It will open the edit issue page that is similar to the create page.
+
+The following screenshot shows how to access the Edit functionality.
+
+![image](image/editissue1.png)
+
+Modify the issue details in the corresponding field of the edit Issue page. The Following screenshot shows 
+
+the edit page to update details of an issue.
+
+![image](image/editissue2.png)
+
+
+Once the update is completed, click on the Update button. The user will be able to see the edited text/fields 
+
+in the View Issue Page.
+
+The Following screenshot shows the updated details −
+
+![image](image/editissue3.png)
+
+
+# JIRA-Email an Issue
+
+In this chapter, we will learn how to email an issue in JIRA. A user can email an issue to other JIRA users. 
+
+There are two ways to do it −
+
+* By share an issue and
+
+* By mention these users in issue’s Description or Comment field.
+
+Let us now discuss each of these in detail.
+
+
+<!--style="font-size:30px"-->
+Sharing an Issue
+
+To begin with, the user should navigate to the issue that is required to share and click to view the issue. 
+
+Click on the Share Symbol on the top right hand side of the page. The following screenshot shows where the 
+
+sharing option present at issue page −
+
+![image](image/shareissue.png)
+
+You can write the JIRA users’ name by typing their usernames or partially/all of their full names as 
+
+registered with JIRA or type the email addresses of the individuals with whom you would like to share the 
+
+issues.
+
+When the user starts typing a JIRA user's username or name, or a previously specified email address, an 
+
+auto-complete dropdown list of users appears.
+
+The Following screenshot shows how to provide email addresses or select from the auto-completion suggestions.
+
+![image](image/shareissue2.png)
+
+Add optional note. Click on the Share button present in the Share wizard section. The following screenshot 
+
+shows how to share/email an issue to a user.
+
+![image](image/shareissue3.jpg)
+
+
+<!--style="font-size:30px"-->
+Mention Users in Description / Comment:
+
+In the issue's Description or the Comment field, type '@' and then the first few characters of the JIRA 
+
+user's username or partially/all of their full name as registered with JIRA.
+
+As the user starts typing, a list of suggested users will appear in a dropdown list below the field. The user 
+
+should select based on the referenced users by completely typing the JIRA user's username or choose from the 
+
+list of suggested users in the dropdown list.
+
+The following screenshot shows how to mention the user’s name/email in the description.
+
+![image](image/description1.png)
+
+Click on submit the field. JIRA will send that user an email message indicating that you mentioned them on 
+
+that issue.
+
+The following screenshot shows how to submit mentioning the user’s email in the description.
+
+![image](image/description2.png)
+
+# JIRA-Label an Issue
+
+A Label is used to categorize an issue. It is similar to the hashtag (#) used in twitter, Facebook or other 
+
+social sites. It also helps while searching an issue. While viewing an issue, the label appears in the detail 
+
+section of the issue.
+
+The following screenshot shows where the labels are present in the issue detail page.
+
+![image](image/label1.png)
+
+Once the user clicks on the label i.e. WFT, it will display the list of issues having the same label.
+
+The following screenshot shows how to search issues using label names −
+
+![image](image/label2.png)
+
+
+<!--style="font-size:30px"-->
+Add and Remove Labels
+
+To add or remove labels, a user has to go to the View Issue page and select the issue that needs to add 
+
+labels. Click on Label →  A dialogue box will appear.
+
+Start typing the label and select from the suggestions. The following screenshot shows how to add labels.
+
+The following screenshot shows how to access the Label features.
+
+![image](image/addlabel1.png)
+
+To ‘Delete’ a label, click on the close (x) sign, which appears beside the label name. The following 
+
+screenshot shows how to delete an existing label −
+
+![image](image/removelabel1.png)
+
+
+# JIRA-Linking Issues
+
+This feature is very useful when two issues have some type of a dependency on each other as if they are 
+
+duplicates or relate to each other, upstream downstream dependency or blocking issues.
+
+<!--style="font-size:30px"-->
+Create a Link to Another Issue
+
+For creating a link to another issue, the user has to navigate to the issue and click on the View Issue Page. 
+
+After that, click More → Link to display link dialogue page.
+
+The following screenshot shows how to access Link feature −
+
+![image](image/linking1.jpg)
+
+Select JIRA Issue item in the left side of the dialogue and select “This issue” field from the dropdown list. 
+
+The following screenshot shows how to link an issue by providing the details.
+
+![image](image/linking2.jpg)
+
+The next step is to select/search issue. The following screenshot shows how to add an issue as a link in 
+
+another issue.
+
+![image](image/linking3.jpg)
+
+Add the comment; it is optional and then Click on Link. The View Issue page shows up and the user can go down 
+
+and verify whether the linked issue is displayed or not under the Section Issue links.
+
+The following screenshot shows how to view linked issue in parent issue −
+
+![image](image/linking4.jpg)
+
+
+<!--style="font-size:30px"-->
+Deleting a Link
+
+To delete a link, a user should go to the View Issue page and to that issue which contains the links. Scroll 
+
+down and go to Issue Links section. Hover the mouse over the link that should be deleted and then click on 
+
+the Delete icon.
+
+The following screenshot shows how to delete a link −
+
+![image](image/linking5.jpg)
+
+A confirmation pop-up will display; click on the Delete button. The following screenshot shows the 
+
+confirmation pop-up for deletion.
+
+![image](image/linking6.jpg)
+
+# JIRA-View/Change History
+
+In this chapter, we will learn how to view and change history in JIRAN. History is the record of all the 
+
+activities performed on issues. Some of the most common instances are −
+
+* Creator of the issue
+
+* Changes to an issue field
+
+* Attachment of a file
+
+* Deletion of comment/Work log
+
+* Addition/deletion of links
+
+In a history record, a user can view the following information.
+
+* User name who made the changes
+
+* Time while the changes was made
+
+* If an issue field is changed, new and old values of that field.
+
+
+<!--style="font-size:30px"-->
+Steps to View History
+
+To view history in JIRA, the user should follow the steps given below.
+
+* Go to View Issue Page to see change history
+
+* Scroll down to Activity section
+
+* Click on History tab
+
+The following screenshot shows how to view History.
+
+![image](image/history1.png)
+
+
+# JIRA-Search
+
+JIRA has powerful and very efficient search functionalities. A user can search issues across Projects, 
+
+Versions and Components using various search types. JIRA allows saving the search criteria to utilize next 
+
+time as filters; even these filters can be shared by others as well.
+
+<!--style="font-size:30px"-->
+Types of Searching Options
+
+JIRA has a couple of fundamental ways to search issues. The most important ones are as follows.
+
+* Basic Search
+
+* Quick Search
+
+
+<!--style="font-size:30px"-->
+1.  Basic Search
+
+Basic Search in JIRA is a user-friendly interface that can be used easily to find out the issues. It uses the 
+
+JQL queries in the backend. To do a basic search in JIRA, the user has to follow the steps given below.
+
+Step 1 − Navigate to issues → Search Issues. The following screenshot shows how to access the Search for 
+
+Issues feature −
+
+![image](image/search1.png)
+
+
+<!--style="font-size:30px"-->
+How to Save a Search
+
+To save the searched criteria, the user should follow the steps given below.
+
+Step 1 − Click on Save As at the top of the page. The following screenshot shows how to save the search 
+
+criteria for future use.
+
+![image](image/search2.png)
+
+Step 2 − Type the filter name and click on Submit. The following screenshot shows how to provide a name of 
+
+new search criteria before saving.
+
+![image](image/search3.png)
+
+Step 3 − A Filter will appear on the left side of the Search Page under the Favourite filters and it will 
+
+have a few options like – Rename, Delete, Copy and Remove from Favourites. The following screenshot shows the 
+
+saved search criteria and the available actions to perform.
+
+![image](image/search4.png)
+
+If we click on'...' then all the option will come you can work on your requirement.
+
+
+<!--style="font-size:30px"-->
+2.  Quick Search
+
+The quick search is the fastest way to define search criteria. It is a text box where the user enters the 
+
+key, text or anything and it starts searching for the exact matches in the current project and provides the 
+
+result.
+
+The Quick Search box is available on the top right hand corner of the navigator. The following screenshot 
+
+shows how to access the Quick Search feature.
+
+![image](image/search5.png)
+
+
+<!--style="font-size:30px"-->
+Smart Querying
+
+The quick search option performs smart searches with minimal typing. It recognizes the following word and 
+
+gives out several options to the user to choose.
+
+* my − This word searches issues assigned to the logged-in user.
+
+The following screenshot shows different smart querying in a quick search.
+
+![image](image/search6.jpg)
+
+Some of the most commonly used smart querying options are as follows −
+
+* r:me − Finds issues reported by the logged-in user.
+
+* r:abc − Finds issues reported by user – abc.
+
+* r:none − Finds issues with no reporter.
+
+* <project name> or <project key> − Finds issues within the given project name or finds issues having the 
+
+same project key.
+
+* Overdue − Finds issues those are overdue before today.
+
+* Created:, updated:, due: − These smart searches finds issues with Created, Updated, or Due Date using the 
+
+prefixes created:, updated:, or due:, respectively. For the date range, use today, tomorrow, yesterday, a 
+
+single date range (e.g. '-1w'), or two date ranges (e.g. '-1w,1w'). Date ranges cannot have spaces between 
+
+them. Valid date/time abbreviations are: 'w' (week), 'd' (day), 'h' (hour), 'm' (minute).
+
+* C: − Finds issues with a particular component.
+
+* V: − Finds issues with a particular version.
+
+* Ff: − Finds issues with a Fixed For version.
+
+* − Wildcard can be utilized with any of the above queries to find issues.
