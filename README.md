@@ -1370,3 +1370,158 @@ them. Valid date/time abbreviations are: 'w' (week), 'd' (day), 'h' (hour), 'm' 
 * Ff: − Finds issues with a Fixed For version.
 
 * − Wildcard can be utilized with any of the above queries to find issues.
+
+
+# JIRA-Report
+
+JIRA provides different types of reports within a project. It helps to analyze the Progress, Issues, 
+
+Showstoppers and Timeliness of any Project. It also helps to analyze the resource utilization as well.
+
+<!--style="font-size:30px"-->
+How to Access Reports
+
+To access reports in JIRA, the user should go to Project → choose Specific project. The following screenshot 
+
+shows how to navigate to a specific project.
+
+![image](image/reports1.jpg)
+
+Click on the Reports icon on the left side of the page. It will display all the reports supported by JIRA. 
+
+The following screenshot shows how to access the Report section.
+
+![image](image/report2.jpg)
+
+When the user clicks on Switch report, it will display the list of reports. The following screenshot shows 
+
+list of reports available for quick switch.
+
+![image](image/report3.jpg)
+
+
+<!--style="font-size:20px"-->
+Type of Reports
+
+JIRA has categorized reports in four levels, which are −
+
+* Agile
+
+* Issue Analysis
+
+* Forecast & Management
+
+* Others
+
+Let us now discuss the features of the above-mentioned report categories in detail.
+
+
+<!--style="font-size:30px"-->
+Agile
+
+Following are the list of features of Agile Reports.
+
+* Burn down Chart − Track the total work remaining, also whether sprint is achieving the project goal or not.
+
+* Sprint Chart − Track the work completed or pushed back to the backlog in each sprint.
+
+* Velocity Chart − Track the amount of work completed from sprint to sprint.
+
+* Cumulative Flow Diagram − Shows the statuses of issues over time. It helps to identify high-risk issues or 
+
+unresolved important issues.
+
+* Version Report − Track the projected release date for a version.
+
+* Epic Report − Shows the progress towards completing an epic over a given time.
+
+* Control Chart − Shows the cycle time for the product, its version or the sprint. It helps to identify 
+
+whether data from the current process can be used to determine future performance.
+
+* Epic Burn Down − Track the projected number of sprints required to complete the epic.
+
+* Release Burn Down − Track the projected release date for a version. It helps to monitor whether the version 
+
+will release on time, so mandatory action can be taken if work is falling behind.
+
+<!--style="font-size:30px"-->
+Issue Analysis
+
+Following are the list of features of Issue Analysis.
+
+* Average Age Report − Displays the average age in days of unresolved issues.
+
+* Created Vs Resolved Issue Report − Display the number of issues created vs the number of issues resolved in 
+
+given period.
+
+* Pie chart Report − Shows a pie chart of issues for a project grouped by a specified field.
+
+* Recently Created Issue Report − Shows the number of issues created over a time-period for a project and how 
+
+many of those were resolved.
+
+* Resolution Time Report − Displays the average time taken to resolve issues.
+
+* Single Level Group by Report − .It helps to group the search results by a field and see the overall status 
+
+of each group.
+
+* Time since Issues Report − It helps to track how many issues were created, updated, resolved, etc., over a 
+
+time-period.
+
+
+<!--style="font-size:30px"-->
+Forecast & Management
+
+Following are the list of features of Forecast and Management type of reports.
+
+* Time Tracking Report − Shows the original and current time estimates for issues in the current project. It 
+
+can help to determine whether work is on track for those issues.
+
+* User Workload Report − Shows the time estimates for all unresolved issues assigned to a user across 
+
+projects. It helps to understand how much a user is occupied, whether overburdened or has less work.
+
+* Version Workload Report − Displays how much outstanding work is remaining per user and per issue. It helps 
+
+to understand the remaining work of a version.
+
+
+# JIRA-Workload Pie Chart
+
+A workload pie chart displays a pie chart showing all the issues for a specific project. Let us understand 
+
+how to use it in JIRA.
+
+<!--style="font-size:30px"-->
+Generate a Report
+
+To generate a report, the user should follow the steps given below.
+
+Step 1 − Go to Project → choose the Specific project. Click on the Report icon on the left side of the menu. 
+
+Go to ‘Others’ section and click on Workload Pie Chart Report as shown in the following screenshot.
+
+![image](image/piechart.jpg)
+
+
+Step 2 − Select Project or issue filter for which to generate the report. In the Statistic Type, select the 
+
+field name on which the pie chart will be formed. Select the Time Field to report on as Current Estimate, 
+
+Original Estimate or Time Spent.
+
+The following screenshot shows how to generate a report by providing details.
+
+![image](image/generatereport.jpg)
+
+Step 3 − Click on Next to generate the report. The following screenshot shows how the generated report looks 
+
+like.
+
+![image](image/next.jpg)
+
